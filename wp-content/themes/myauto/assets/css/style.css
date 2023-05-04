@@ -1,0 +1,190 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+/* Чтобы футтор прижимался к низу страницы */
+
+html,
+body {
+  height: 100%;
+}
+/* Чтобы футтор прижимался к низу страницы */
+
+body {
+  font-family: "Philosopher", sans-serif;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  color: #2c2b2b;
+  background-color: #f9f4ee;
+  line-height: 1.3; /* высота строки, высчитываентся автоматом */
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none; /* Убираем подчеркиваение */
+  color: inherit; /* Чтобы цвет брался у родителя */
+  display: inline-block; /* Чтобы применялись свойства блочных */
+}
+
+.container {
+  max-width: 1200px;
+  margin-left: auto; /* Устанавливает внешний отступ слева от элемента */
+  margin-right: auto; /* Устанавливает внешний отступ справа от элемента */
+  padding: 0 10px; /* Устанавливает внутренние отступы/поля со всех сторон элемента */
+}
+
+.header {
+  color: #524133;
+  background-color: #f2e8e6;
+}
+
+.header__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link {
+  color: #3f2511;
+}
+/* .header__top { */
+/* padding: 47px 0 45px; */
+/* Сверху; слева-справа; Снизу */
+/* display: flex; */
+/* justify-content: space-between; */
+/* На равное растояние раскидывает объякты */
+/* align-items: center; */
+/* } */
+
+.phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px; /* identical to box height */
+  padding-left: 338px;
+}
+
+.header__content {
+  /* background-image: url(/images/header_bg2.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /*  Является ли позиция этого изображения фиксированной 
+ в области просмотра, или прокручивается вместе с содержащим его блоком. */
+  /* background-position: top center; */
+  min-height: 700px;
+  position: relative;
+}
+
+.header__title {
+  padding-top: 222px;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 62px;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  margin-top: 87px;
+  margin-bottom: 87px;
+}
+
+.button {
+  font-weight: 400;
+  font-size: 24.5px;
+  line-height: 31px;
+  padding: 24px 58px 24px;
+  border: 2px solid #524133;
+  border-radius: 15px;
+}
+
+.footer {
+  background-color: #f2e8e6;
+  padding: 54px 0 64px;
+}
+
+.footer__menu {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer__menu_list {
+  max-width: 250px;
+}
+
+.footer__menu-title {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 25px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.footer__menu-item + .footer__menu-item {
+  margin-top: 15px;
+}
+
+/* .app{
+  display: flex;
+  gap: 25.5px;
+ } */
+
+.main {
+  flex-grow: 1;
+  /* Чтобы футтор прижимался к низу страницы */
+}
+
+.top {
+  text-align: center;
+  padding-top: 219px;
+  padding-bottom: 50px;
+  }
+
+.title {
+  padding-bottom: 213px;
+  /* растояние от заголовка до кнопки */
+  font-weight: 400;
+  font-size: 50px;
+  display: flex;
+}
+
+.top__link {
+  font-weight: 400;
+  font-size: 24.5px;
+  line-height: 31px;
+  padding: 24px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  padding-left: 58px;
+  padding-right: 57px;
+  border: solid;
+  border-color: #524133;
+  border-radius: 15px;
+}
