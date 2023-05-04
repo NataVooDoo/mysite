@@ -14,6 +14,10 @@
           </button> -->
         </div>
       </section>
-          </main>
+    </main>
+
+    <script>
+      hello();
+    </script>
 
 <?php get_footer(); ?>
