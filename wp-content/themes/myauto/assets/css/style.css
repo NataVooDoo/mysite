@@ -50,6 +50,12 @@ a {
   padding: 0 10px; /* Устанавливает внутренние отступы/поля со всех сторон элемента */
 }
 
+.block_text {
+  padding-right: 600px;
+  padding-top: 219px;
+  padding-bottom: 50px;
+}
+
 .header {
   color: #524133;
   background-color: #f2e8e6;
@@ -161,10 +167,18 @@ a {
 
 .top {
   text-align: center;
-  padding-top: 219px;
-  padding-bottom: 50px;
-  background-image: url("../images/header_bg2.png");
+
+  /* background-image: url("../images/header_bg2.png"); */
+  position: relative;;
   }
+
+.top img{
+  position: absolute;
+  height: 100%;
+  z-index: -1;
+  overflow: hidden;
+  right: -100px;
+}
 
 .title {
   padding-bottom: 213px;
