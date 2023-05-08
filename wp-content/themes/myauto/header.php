@@ -20,7 +20,7 @@
       <div class="container">
         <div class="header__inner">
           <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
+            <img class="logo__img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.svg" alt="logo">
           </a>
           <nav class="menu">
             <ul class="menu__list">
@@ -36,3 +36,6 @@
         </div>
       </div>   
     </header>
+
+  </body>
+    

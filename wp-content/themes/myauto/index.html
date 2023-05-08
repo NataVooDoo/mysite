@@ -1,307 +1,179 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Allura&family=Mulish&family=Philosopher&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-
-  <header class="header">
-    <div class="container">
-      <div class="header__top">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-        </a>
-        <a class="phone" href="tel:+380505556677">+38 (050) 555 66 77</a>
-      </div>
-      <div class="header__content">
-        <h1 data-wow-delay=".5s" class="header__title wow animate__fadeInLeft">
-          авто из сша “под ключ”
-        </h1>
-        <h2 data-wow-delay="1s" class="header__subtitle wow animate__fadeInLeft">
-          ЗАКАЖИ СЕБЕ АВТО ИЗ США С ВЫГОДОЙ ДО 40%
-        </h2>
-        <p data-wow-delay="1.5s" class="header__text wow animate__fadeInLeft">
-          Подбор, покупка, доставка, растаможка, ремонт, оформление по договору
-        </p>
-        <a class="button" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
-        <div class="social header__social">
-          <a class="social__link" href="#">
-            <svg class="test" width="26" height="26">
-              <use xlink:href="images/icon/sprite.svg#instagram"></use>
-            </svg>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a class="logo" href="#">
+            <img class="logo__img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.svg" alt="logo">
           </a>
-          <a class="social__link" href="#">
-            <svg width="25" height="19">
-              <use xlink:href="images/icon/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-          <a class="social__link" href="#">
-            <svg width="26" height="26">
-              <use xlink:href="images/icon/sprite.svg#whatsapp"></use>
-            </svg>
-          </a>
-          <a class="social__link" href="#">
-            <svg width="14" height="25">
-              <use xlink:href="images/icon/sprite.svg#facebook"></use>
-            </svg>
-          </a>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__list-item"><a href="" class="menu__list-link">Обо мне</a></li>
+              <li class="menu__list-item"><a href="" class="menu__list-link">Портфолио</a></li>
+              <li class="menu__list-item"><a href="" class="menu__list-link">Тарифы</a></li>
+              <li class="menu__list-item"><a href="" class="menu__list-link">Контакты</a></li>
+              <!-- <li class="menu__list-item"><a href="" class="menu__list-link__sity">Краснодар</a></li> -->
+              <li class="menu__list-item"> <a class="phone" href="tel:+77777777777">+7 (777) 777 77 77</a></li>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <img data-wow-delay="2s" class="header__images wow animate__fadeInUpBig" src="images/ford-mustang.png"
-          alt="ford mustang">
-      </div>
-    </div>
-  </header>
+      </div>   
+    </header>
 
-  <section class="services">
-    <div class="container">
-      <h2 class="title">НАШИ УСЛУГИ</h2>
-      <div class="services__inner">
-        <div class="services__content">
-          <div class="services__content-box">
-            <h6 class="services__content-title">
-              Почему ввоз авто из США?
-            </h6>
-            <div class="services__content-textbox">
-              <p class="services__content-text">
-                Мы сравнили рынки США с Европейскими и поняли, что покупка автомобиля в Америке выгоднее в несколько
-                раз, как бы
-                парадоксально это не звучало. Это вызвано продуманной логистикой, уровнем развития сервисов по
-                оцениванию состояния авто
-                и самим процессом покупки автомобиля.
+    
+    <main>
+
+      <section class="top">
+        <div class="container">
+          <h1 class="title">
+            Хранитель самых ярких и теплых моментов
+          </h1>
+          <h3 class="title__2">
+            Профессиональный фотограф Торн Александра
+          </h3>
+          <a href="#" class="top__link">
+            Записаться на съемку
+          </a>
+          <!-- <button class="top__link">
+            Записаться на съемку
+          </button> -->
+        </div>
+      </section>
+
+      <section class="i-am">
+        <div class="container">
+          <!-- <h2 class="i-am-title">Привет, меня зовут Саша.</h2> -->
+          <div class="i-am_info">
+            <img
+              class="i-am__photo"
+              src="assets/images/My_photo2.png"
+              alt="my_photo"
+            />
+            <div class="i-am__text">
+              <h2 class="i-am-title">Привет, меня зовут Саша.</h2>
+              <p>
+                Я начала увлекаться фотографией ещё в 2011, но в 2017 решила
+                превратить это увлечение в дело всей своей жизни. Поэтому вот
+                уже пять лет с помощью своего видения я показываю людей
+                настоящими и раскрываю их с новой стороны.
               </p>
-              <p class="services__content-text">
-                Большинство граждан США берут автомобиль в лизинг на несколько лет и все время эксплуатации сама
-                лизинговая компания
-                занимается постоянным ТО автомобиля, вследствие чего, машины из США – один из лучших выборов для
-                автолюбителей Украины.
+              <p>
+                Самое трепетное - это, осознавать, что люди спустя много лет
+                будут смотреть фотографии с важных для них событий и чувствовать
+                радость пережитых моментов их жизни. И пусть, меня, возможно,
+                они уже и не вспомнят, на душе становится тепло, потому что я
+                внесла такой вклад в чьи-то воспоминания.
               </p>
+              <p>
+                Моё основное место деятельности - Краснодар. Но я открыта к
+                другим городам и странам, поэтому если вы хотите видеть меня в
+                качестве своего фотографа - напишите мне, и мы обсудим все
+                детали вашей съёмки.
+              </p>
+              <div class="i-am__bottom">
+              <p class="i-am__love">С любовью, </p>
+              <p class="i-am__love__tora">Tora</p>
             </div>
-          </div>
-          <div class="services__content-box">
-            <h6 class="services__content-title">
-              Из-за чего такая низкая цена?
-            </h6>
-            <div class="services__content-textbox">
-              <p class="services__content-text">
-                Битые автомобили из США выкупаются с аукционов страховых компаний. На этих аукционах машина теряет
-                половину цены даже
-                из-за минимальных повреждений. Если учитывать денежные затраты, а именно выкуп, доставку, таможню и
-                ремонт, то цена
-                аналогичного по состоянию автомобиля в Украине будет выше на 35-50%, а новые будут стоить космических
-                денег.
-              </p>
-            </div>
-            <a class="button button--decor" href="#">КОНСУЛЬТАЦИЯ ЭКСПЕРТА</a>
+             </div>            
           </div>
         </div>
-        <ol class="services__list">
-          <li data-wow-delay="1s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Покупка авто</p>
-            <p class="services__item-text">Подбор автомобиля и экспертная проверка</p>
-          </li>
-          <li data-wow-delay="1.2s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Доставка морем</p>
-            <p class="services__item-text">Расчет оптимальной стоимости доставки авто</p>
-          </li>
-          <li data-wow-delay="1.4s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Растаможка авто</p>
-            <p class="services__item-text">Прохождение таможенного оформления (2-3 дня)</p>
-          </li>
-          <li data-wow-delay="1.6s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Ремонт авто</p>
-            <p class="services__item-text">Комплексный ремонт автомобиля на СТО</p>
-          </li>
-          <li data-wow-delay="1.8s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Сертификация</p>
-            <p class="services__item-text">Услуга предоставляется по желанию</p>
-          </li>
-          <li data-wow-delay="2s" class="services__item wow animate__fadeInRight">
-            <p class="services__item-title">Постановка на учет</p>
-            <p class="services__item-text">Оформление автомобиля в Украине</p>
-          </li>
-        </ol>
-      </div>
-    </div>
-  </section>
+      </section>
 
+      <section class="price">
+        <div class="container">
+         <ul class="price-list">
+          <li class="price-item">
+            <h1>WEDDING</h1>
+            <img src="assets/images/price/Wedding.jpg" alt="">
+            <a href=""><h3>СМОТРЕТЬ</h3></a>
+          </li>
+          <li class="price-item">
+            <h1>FAMILY/LOVESTORY</h1>
+            <img src="assets/images/price/family.jpg" alt="">
+            <a href=""><h3>СМОТРЕТЬ</h3></a>
+          </li>
+          <li class="price-item">
+            <h1>PORTRAIT</h1>
+            <img src="assets/images/price/portrait.jpg" alt="">
+            <a href=""><h3>СМОТРЕТЬ</h3></a>
+          </li>
+         </ul>
+        </div>
+      </section>
 
-  <section class="benefits">
-    <div class="container">
-      <div class="benefits__inner">
-        <img data-wow-delay="2s" class="benefits__images wow animate__fadeInUp" src="images/car.png" alt="car">
-        <div class="benefits__content">
-          <h2 class="title benefits__title">ПОЧЕМУ МЫ?</h2>
-          <ul class="benefits__list">
-            <li class="benefits__item">
-              <p class="benefits__item-num">650</p>
-              <p class="benefits__item-title">успешно доставленных авто</p>
-              <p class="benefits__item-text">
-                большой опыт пригона автомобилей из США под ключ, все клиенты остались довольны на 100%
-              </p>
+      <section class="instagram">
+        <div class="container">
+          <h1 class="instagram__title">СЛЕДИТЕ ЗА МОИМИ РАБОТАМИ В INSTAGRAM</h1>
+        <div class="instagram__photo">
+          <img src="assets/images/instagram/1.png" alt="">
+          <img src="assets/images/instagram/2.png" alt="">
+          <img src="assets/images/instagram/3.png" alt="">
+          <img src="assets/images/instagram/4.png" alt="">
+        </div>      
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="conteiner">
+        <nav class="footer__menu">
+          <ul class="footer__menu_list">
+            <li class="footer__menu-item"> <p class="footer__menu-title">КОНТАКТЫ</p>
             </li>
-            <li class="benefits__item">
-              <p class="benefits__item-num">5</p>
-              <p class="benefits__item-title">лет на рынке Украины</p>
-              <p class="benefits__item-text">
-                Работаем по всей территории Украины, работаем по договору с клиентами
-              </p>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link">Tora_alesandra@mail.ru</a>
             </li>
-            <li class="benefits__item">
-              <p class="benefits__item-num">100%</p>
-              <p class="benefits__item-title">доверия клиентов</p>
-              <p class="benefits__item-text">
-                Онлайн отчетность. Вы всегда в курсе статуса подбора вашего авто. Фото и видео отчет
-              </p>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link">+7 777 777 77 77</a>
             </li>
+           </ul>
+          <ul class="footer__menu_list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Обо мне</li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Портфолио</li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Этапы работы</li>
           </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <section class="carousel">
-    <div class="container">
-      <h2 class="title">
-        ПРИГНАННЫЕ НАМИ АВТО
-      </h2>
-      <div class="carousel__inner">
-
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/1.jpg" alt="">
-            <h4 class="carousel__item-title">INFINITI QX50 2016 г.</h4>
-            <p class="carousel__item-text">Экономия 4500 $</p>
-          </div>
-        </div>
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/2.jpg" alt="">
-            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
-            <p class="carousel__item-text">Экономия 5500 $</p>
-          </div>
-        </div>
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/3.jpg" alt="">
-            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
-            <p class="carousel__item-text">Экономия 5500 $</p>
-          </div>
-        </div>
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/1.jpg" alt="">
-            <h4 class="carousel__item-title">INFINITI QX50 2016 г.</h4>
-            <p class="carousel__item-text">Экономия 4500 $</p>
-          </div>
-        </div>
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/2.jpg" alt="">
-            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
-            <p class="carousel__item-text">Экономия 5500 $</p>
-          </div>
-        </div>
-        <div class="carousel__item">
-          <div class="carousel__item-box">
-            <img class="carousel__item-img" src="images/carousel/3.jpg" alt="">
-            <h4 class="carousel__item-title">TESLA MODEL 3 2018 г.</h4>
-            <p class="carousel__item-text">Экономия 5500 $</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section class="contacts">
-    <div class="container">
-      <div class="contacts__inner">
-        <div class="contacts__info">
-          <h2 class="title">
-            КОНТАКТЫ
-          </h2>
-          <ul class="contacts__list">
-            <li class="contacts__item">
-              <p class="contacts__item-title">Адрес</p>
-              <p class="contacts__item-text">
-                Киев, Подол <br>
-                ул. Константиновская, д.71
-              </p>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Время работы</p>
-              <p class="contacts__item-text">
-                Пн-Сб: с 9:00 до 19:00, <br>
-                Вс: выходной
-              </p>
-            </li>
-            <li class="contacts__item">
-              <p class="contacts__item-title">Телефон</p>
-              <p class="contacts__item-text">
-                +38 (050) 555 66 77
-              </p>
-            </li>
+          <ul class="footer__menu_list">
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Тарифы</li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Отзывы</li>
+            <li class="footer__menu-item"><a href="#" class="footer__menu_link"></a>Контакты</li>
           </ul>
-        </div>
-        <form class="contacts__form">
-          <h2 class="title contacts__title">Оставить заявку</h2>
-          <input class="contacts__input" type="text" placeholder="Как Вас зовут?">
-          <input class="contacts__input" type="tel" placeholder="Ваш номер телефона">
-          <button class="contacts__btn button" type="submit">Отправить заявку</button>
-        </form>
+          <ul class="app">
+            <li class="footer__menu-item"> <p class="footer__menu-title">Для быстрой связи</p>
+            </li>
+            <il class="app__item">
+              <a href="#" class="app__item-link">
+                <img class="app__item-img" src="assets/images/apps/instagram.svg" alt="">
+              </a>
+            </il>
+            <il class="app__item">
+              <a href="#" class="app__item-link">
+                <img class="app__item-img" src="assets/images/apps/whatsapp.svg" alt="">
+              </a>
+            </il>
+            <il class="app__item">
+              <a href="#" class="app__item-link">
+                <img class="app__item-img" src="assets/images/apps/telegram.svg" alt="">
+              </a>
+            </il>
+            <il class="app__item">
+              <a href="#" class="app__item-link">
+                <img class="app__item-img" src="assets/images/apps/facebook.svg" alt="">
+              </a>
+             </il>
+           </ul>
+          </nav>
       </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-        <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.svg" alt="logo">
-        </a>
-
-        <div class="social footer__social">
-          <a class="social__link" href="#">
-            <img class="social__img" src="images/icon/instagram.svg" alt="instagram icon">
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__img" src="images/icon/telegram.svg" alt="telegram icon">
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__img" src="images/icon/whatsapp.svg" alt="whatsapp icon">
-          </a>
-          <a class="social__link" href="#">
-            <img class="social__img" src="images/icon/facebook.svg" alt="facebook icon">
-          </a>
-        </div>
-
-        <a class="footer__copy" href="#">
-          Политика конфиденциальности
-        </a>
-      </div>
-    </div>
-  </footer>
-
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
-
+    </footer>
+  </body>
 </html>

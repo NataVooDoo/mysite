@@ -1,3 +1,5 @@
+<div>
+  <body>
 <footer class="footer">
       <div class="conteiner">
         <nav class="footer__menu">
