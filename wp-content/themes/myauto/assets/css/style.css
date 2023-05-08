@@ -59,6 +59,9 @@ a {
 .header {
   color: #524133;
   background-color: #f2e8e6;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
 .header__inner {
@@ -169,10 +172,16 @@ a {
   text-align: center;
 
   /* background-image: url("../images/header_bg2.png"); */
-  position: relative;;
-  }
+  position: relative;
+}
 
-.top img{
+hr {
+  width: 380px;
+  /* left: 226.67px;
+  top: 499.72px; */
+  border: 2px solid #94897f;
+ }
+.top img {
   position: absolute;
   height: 100%;
   z-index: -1;
@@ -181,7 +190,7 @@ a {
 }
 
 .title {
-  padding-bottom: 213px;
+  padding-bottom: 45px;
   /* растояние от заголовка до кнопки */
   font-weight: 400;
   font-size: 50px;
@@ -205,7 +214,7 @@ a {
 }
 
 .i-am {
-  padding: 210px 0 209px;
+  padding: 120px 0 120px;
 }
 
 .i-am-title {
@@ -224,7 +233,7 @@ a {
 }
 
 .i-am__text p {
-  margin: 0 41px 30px;
+  margin: 0 0 30px;
   font-family: "Mulish";
   font-weight: 400;
   font-size: 22px;
@@ -241,8 +250,8 @@ a {
 }
 
 .price {
-  padding-top: 108px;
-  padding-bottom: 108px;
+  padding-top: 90px;
+  padding-bottom: 90px;
   background-color: #ceb8a3;
 }
 
@@ -258,12 +267,11 @@ a {
 }
 
 .price-item h1 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 45px;
+  font-size: 35px;
+  line-height: 39px;
   color: #524133;
-
 }
 
 .price-item h3 {
@@ -274,12 +282,12 @@ a {
   margin: 0;
 }
 
-.instagram__title{
-  margin-top: 155px;
+.instagram__title {
+  margin-top: 120px;
   margin-bottom: 65px;
   text-align: center;
 }
-.instagram__photo{
+.instagram__photo {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
