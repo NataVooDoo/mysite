@@ -139,7 +139,7 @@ a {
 
 .footer__menu {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .footer__menu_list {
@@ -155,7 +155,7 @@ a {
 }
 
 .footer__menu-item + .footer__menu-item {
-  margin-top: 15px;
+  margin-top: 30px;
 }
 
 /* .app{
@@ -295,7 +295,7 @@ hr {
 
 /* Страница цен */
 
-.prise-wedd{
+.prise-wedd {
   padding: 52px 0;
 }
 
@@ -306,7 +306,8 @@ hr {
   padding: 24px;
   max-width: 380px;
   width: 100%;
-  display: flex;
+  /* display: flex;
+  justify-content: center; */
   background-color: transparent;
   padding-left: 58px;
   padding-right: 57px;
@@ -315,34 +316,48 @@ hr {
   border-radius: 15px;
 }
 
-.prise-wedd__inner{
-  padding: 0 130px 0 ;
-}
-
-.price__list{
+.price__list {
+  font-family: "Mulish";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 28px;
   padding-left: 35px;
   background-image: url(../images/heart.svg);
-  background-position: 0 0;
+  background-position: 0 9px;
   background-size: 19px 17px;
   background-repeat: no-repeat;
   margin: 0 0 24px;
 }
 
-.prise-wedd__inner{
-display: flex;
-justify-content: space-between;
+.prise-wedd__inner {
+  display: flex;
+  justify-content: space-between;
 }
 
-.prise-wedd__cards{
+.prise-wedd__cards {
   width: 480px;
 }
 
-.prise-wedd__title{
-  font-family: 'Philosopher';
-font-style: normal;
-font-weight: 400;
-font-size: 40px;
-line-height: 45px;
-text-align: center;
-margin: 0 0 45px;
+.prise-wedd__title {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  margin: 0 0 45px;
+}
+
+.prise-wedd__title__mini {
+  text-align: center;
+  margin: 35px 0 35px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+}
+
+.prise-wedd__title__price {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 27px;
+  margin: 35px 0 35px;
+  text-align: center;
 }
