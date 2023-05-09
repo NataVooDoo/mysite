@@ -295,6 +295,22 @@ hr {
 
 /* Страница цен */
 
+.title-name {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.title-name h1{
+  display: block;
+   background-color: #ceb8a3;
+  min-height: 126px;
+  font-family: "Philosopher";
+  font-weight: 400;
+  font-size: 48px;
+  text-align: center;
+  padding-top: 36px;
+}
+
 .prise-wedd {
   padding: 52px 0;
 }
@@ -336,6 +352,10 @@ hr {
 
 .prise-wedd__cards {
   width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .prise-wedd__title {
@@ -360,4 +380,8 @@ hr {
   line-height: 27px;
   margin: 35px 0 35px;
   text-align: center;
+}
+
+.prise-wedd__plus__maxi {
+  padding: 190px 0 190px;
 }
