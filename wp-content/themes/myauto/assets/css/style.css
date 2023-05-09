@@ -59,9 +59,9 @@ a {
 .header {
   color: #524133;
   background-color: #f2e8e6;
-  position: fixed;
+  /* position: fixed;
   width: 100%;
-  z-index: 2;
+  z-index: 2; */
 }
 
 .header__inner {
@@ -180,7 +180,7 @@ hr {
   /* left: 226.67px;
   top: 499.72px; */
   border: 2px solid #94897f;
- }
+}
 .top img {
   position: absolute;
   height: 100%;
@@ -291,4 +291,58 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-bottom: 40px;
+}
+
+/* Страница цен */
+
+.prise-wedd{
+  padding: 52px 0;
+}
+
+.prise-wedd__link {
+  font-weight: 400;
+  font-size: 24.5px;
+  line-height: 31px;
+  padding: 24px;
+  max-width: 380px;
+  width: 100%;
+  display: flex;
+  background-color: transparent;
+  padding-left: 58px;
+  padding-right: 57px;
+  border: solid;
+  border-color: #524133;
+  border-radius: 15px;
+}
+
+.prise-wedd__inner{
+  padding: 0 130px 0 ;
+}
+
+.price__list{
+  padding-left: 35px;
+  background-image: url(../images/heart.svg);
+  background-position: 0 0;
+  background-size: 19px 17px;
+  background-repeat: no-repeat;
+  margin: 0 0 24px;
+}
+
+.prise-wedd__inner{
+display: flex;
+justify-content: space-between;
+}
+
+.prise-wedd__cards{
+  width: 480px;
+}
+
+.prise-wedd__title{
+  font-family: 'Philosopher';
+font-style: normal;
+font-weight: 400;
+font-size: 40px;
+line-height: 45px;
+text-align: center;
+margin: 0 0 45px;
 }
