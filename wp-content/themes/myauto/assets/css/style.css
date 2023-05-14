@@ -301,14 +301,16 @@ hr {
 }
 
 .title-name h1{
-  display: block;
-   background-color: #ceb8a3;
+  background-color: #ceb8a3;
   min-height: 126px;
-  font-family: "Philosopher";
   font-weight: 400;
   font-size: 48px;
   text-align: center;
   padding-top: 36px;
+}
+
+.prise-wedd__mini__standart{
+  padding-top: 86px;
 }
 
 .prise-wedd {
@@ -384,4 +386,35 @@ hr {
 
 .prise-wedd__plus__maxi {
   padding: 190px 0 190px;
+}
+
+
+/* Страница портфолио */
+
+.portfolio-wedd{
+  padding: 52px 0;
+}
+
+.portfolio__inner{
+  margin: 86px 0 86px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.portfolio-wedd__photo{
+  margin: 0 0 24px;
+}
+
+.portfolio-wedd__title{
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 45px;
+  text-align: center;
+  color: #524133;
+}
+
+/* Страница контакты */
+
+.contacts{
+  padding: 52px 0;
 }
