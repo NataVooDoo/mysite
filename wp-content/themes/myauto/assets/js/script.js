@@ -1,5 +1,8 @@
-// типа тут скрипты
+let menuBtn = document.querySelector('.menu_btn');
+let menu = document.querySelector('.menu_burger');
 
-function hello(){
-    alert('хы скрипты тоже подключаются, удали это потом из index.php, жмякай ok')
-}
+menuBtn.addEventListener('click', function(){
+	menuBtn.classList.toggle('active');
+	menu.classList.toggle('active');
+})
+
