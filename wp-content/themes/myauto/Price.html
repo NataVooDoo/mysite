@@ -12,29 +12,47 @@
   </head>
   <body>
 
-    <header class="header">
-      <div class="container">
-        <div class="header__inner">
-          <a class="logo" href="#">
-            <img class="logo__img" src="/assets/images/logo.svg" alt="logo">
-          </a>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__list-item"><a href="" class="menu__list-link">Обо мне</a></li>
-              <li class="menu__list-item"><a href="" class="menu__list-link">Портфолио</a></li>
-              <li class="menu__list-item"><a href="" class="menu__list-link">Тарифы</a></li>
-              <li class="menu__list-item"><a href="" class="menu__list-link">Контакты</a></li>
-              <!-- <li class="menu__list-item"><a href="" class="menu__list-link__sity">Краснодар</a></li> -->
-              <li class="menu__list-item"> <a class="phone" href="tel:+77777777777">+7 (777) 777 77 77</a></li>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>   
-    </header>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__inner">
+            <a class="logo" href="#">
+              <img class="logo__img" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo.svg" alt="logo">
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a href="" class="menu__list-link">Обо мне</a></li>
+                <li class="menu__list-item"><a href="" class="menu__list-link">Портфолио</a></li>
+                <li class="menu__list-item"><a href="" class="menu__list-link">Тарифы</a></li>
+                <li class="menu__list-item"><a href="" class="menu__list-link">Контакты</a></li>
+                <!-- <li class="menu__list-item"><a href="" class="menu__list-link__sity">Краснодар</a></li> -->
+  
+              </ul>
+            </nav>
+            <div class="menu__list-item"> <a class="phone" href="tel:+77777777777">+7 (777) 777 77 77</a></div>
+            <div class="burger_menu">
+              <div class="menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+                <nav class="menu_burger">
+                  <ul class="menu_list">
+                    <li class="menu-item"><a href="" class="menu__list-link burger_link">Обо мне</a></li>
+                    <li class="menu-item"><a href="" class="menu__list-link burger_link">Портфолио</a></li>
+                    <li class="menu-item"><a href="" class="menu__list-link burger_link">Тарифы</a></li>
+                    <li class="menu-item"><a href="" class="menu__list-link burger_link">Контакты</a></li>
+                  </ul>
+                </nav>
+            </div>
+          </div>
+            
+          </div>
+        </div>   
+      </header>
 
     
-    <main>
+      <main>
       <section class="prise-wedd">
 
         <div class="title-name">
@@ -49,7 +67,7 @@
             <div class="prise-wedd__cards">
               <div>
               <h2 class="prise-wedd__title"> MINI </h2>
-              <img src="assets/images/price/mini.png" alt="">
+              <img class="wed__img" src="assets/images/price/mini.png" alt="">
               <p class="prise-wedd__title__mini">ВКЛЮЧАЕТ В СЕБЯ:</p>
               <ul class="price-wedd__list">
                 <li class="price__list">съемка до 3 часов (не менее 200 кадров)</li>
@@ -70,7 +88,7 @@
            <div class="prise-wedd__cards">
             <div>
               <h2 class="prise-wedd__title">STANDART</h2>
-              <img src="assets/images/price/standart.png" alt="">
+              <img class="wed__img" src="assets/images/price/standart.png" alt="">
               <p class="prise-wedd__title__mini">ВКЛЮЧАЕТ В СЕБЯ:</p>
               <ul class="price-wedd__list">
                 <li class="price__list">съемка до 5 часов (не менее 400 кадров)</li>
@@ -96,7 +114,7 @@
               <div class="prise-wedd__cards">
                 <div>
                 <h2 class="prise-wedd__title">PLUS</h2>
-                <img src="assets/images/price/mini.png" alt="">
+                <img class="wed__img" src="assets/images/price/mini.png" alt="">
                 <p class="prise-wedd__title__mini">ВКЛЮЧАЕТ В СЕБЯ:</p>
                 <ul class="price-wedd__list">
                   <li class="price__list">съемка ДО 8 ЧАСОВ (не менее 600 кадров)</li>
@@ -119,7 +137,7 @@
              <div class="prise-wedd__cards">
               <div>
                 <h2 class="prise-wedd__title">MAXI</h2>
-                <img src="assets/images/price/standart.png" alt="">
+                <img class="wed__img" src="assets/images/price/standart.png" alt="">
                 <p class="prise-wedd__title__mini">ВКЛЮЧАЕТ В СЕБЯ:</p>
                 <ul class="price-wedd__list">
                   <li class="price__list">съемка ДО 10 ЧАСОВ (не менее 700 кадров)</li>
@@ -143,10 +161,10 @@
            </div>
         </div>
       </section>
-    </main>
+     </main>
 
     
-    <footer class="footer">
+     <footer class="footer">
       <div class="container">
         <nav class="footer__menu">
           <ul class="footer__menu_list">
@@ -194,5 +212,8 @@
           </nav>
       </div>
     </footer>
+  </div> 
+
   </body>
+  
 </html>
