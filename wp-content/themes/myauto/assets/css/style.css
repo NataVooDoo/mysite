@@ -88,7 +88,6 @@ a {
   width: 40px;
 }
 
-
 .menu_btn {
   width: 40px;
   height: 40px;
@@ -671,6 +670,7 @@ hr {
   justify-content: space-between;
 }
 
+
 .portfolio-wedd__photo {
   margin: 0 0 24px;
 }
@@ -682,6 +682,34 @@ hr {
   text-align: center;
   color: #524133;
 }
+
+@media (max-width: 1220px) {
+  .portfolio__inner {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .portfolio-wedd__ivan-maria{
+    margin: 20px;
+  }
+  .portfolio-wedd__artem-alisa{
+    margin: 20px;
+  }
+  .portfolio-wedd__artur-alina{
+    margin: 20px;
+  }
+  .portfolio-wedd__victor-anna{
+    margin: 20px;
+  }
+  .portfolio-wedd__jaden-karin{
+    margin: 20px;
+  }
+  portfolio-wedd__pavel-anna{
+    margin: 20px;
+  }
+  }
+
+
+
 
 /* Страница контакты */
 
@@ -696,14 +724,13 @@ hr {
   .price__list {
     font-size: 18px;
   }
-  .prise-wedd__title{
+  .prise-wedd__title {
     font-size: 24px;
   }
-  .prise-wedd__title__mini{
+  .prise-wedd__title__mini {
     font-size: 30px;
   }
 }
-
 
 @media (max-width: 729px) {
   .burger_menu {
