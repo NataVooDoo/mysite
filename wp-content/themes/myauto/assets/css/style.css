@@ -666,8 +666,9 @@ hr {
 
 .portfolio__inner {
   margin: 86px 0 86px;
-  display: flex;
+  display: flex; 
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 
