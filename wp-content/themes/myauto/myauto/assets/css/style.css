@@ -53,6 +53,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .title__2 {
@@ -337,12 +338,14 @@ hr {
   flex-wrap: wrap;
 }
 
+.tora_alesandra{
+  transition: 1s;
+}
 .tora_alesandra:hover {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  transition: 1s;
-}
+  }
 
 .bot_container {
   display: flex;
