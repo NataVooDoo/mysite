@@ -53,7 +53,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .title__2 {
@@ -109,10 +108,21 @@ a {
   gap: 30px;
 }
 
+.footer__menu_link {
+  transition: 1s;
+}
 
-/* .center_list {
-  max-width: 200px;
-} */
+.footer__menu_link:hover {
+  scale: 1.1;
+}
+
+.app__item-link {
+  transition: 1s;
+}
+
+.app__item-link:hover {
+  scale: 1.5;
+}
 
 .center_list .footer__menu_list {
   min-width: 118px;
@@ -146,6 +156,7 @@ a {
   height: 870px;
   position: relative;
   align-items: center;
+  left: 100px;
 }
 
 hr {
@@ -267,7 +278,7 @@ hr {
   width: 100%;
   max-width: 1440px;
   padding-top: 108px;
-  padding-bottom: 108px;
+  padding-bottom: 74px;
   background-color: #ceb8a3;
   display: flex;
   flex-direction: column;
@@ -312,16 +323,16 @@ hr {
   color: #7f6c5c;
   margin: 0;
   transition: 1s;
-  
+  height: 65px;
 }
 
 .price-item h3:hover {
-  box-shadow: inset 400px 0 0 0 #F9F4EE;
+  box-shadow: inset 400px 0 0 0 #f9f4ee;
   border-radius: 15px;
   padding: 18px 36px;
   display: inline-block;
   cursor: pointer;
-  }
+}
 
 .instagram__title {
   margin-top: 147px;
@@ -338,14 +349,16 @@ hr {
   flex-wrap: wrap;
 }
 
-.tora_alesandra{
+.tora__alesandra {
   transition: 1s;
+  height: 5px;
 }
-.tora_alesandra:hover {
+
+.tora__alesandra:hover {
   font-weight: 400;
   font-size: 24px;
   line-height: 30px;
-  }
+}
 
 .bot_container {
   display: flex;
@@ -594,6 +607,7 @@ hr {
   .top {
     height: 1120px;
     flex-direction: column;
+    left: 0px;
     justify-content: flex-end;
     align-items: center;
   }
