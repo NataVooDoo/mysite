@@ -136,7 +136,6 @@ a {
   margin-top: 30px;
 }
 
-
 /* .app{
   display: flex;
   gap: 25.5px;
@@ -409,6 +408,12 @@ hr {
   border: solid;
   border-color: #524133;
   border-radius: 15px;
+  transition: 1s;
+}
+
+.prise-wedd__link:hover {
+  background-color: #ceb8a3;
+  border: 2px transparent;
 }
 
 /* hr{
@@ -438,7 +443,7 @@ hr {
   justify-content: space-between;
   max-width: 1420px;
   margin-top: 86px;
-  margin-bottom: 261px;
+  /* margin-bottom: 261px; */
 }
 
 .prise-wedd__cards {
@@ -447,6 +452,7 @@ hr {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  padding: 0 0 190px;
 }
 
 .prise-wedd__title {
@@ -477,6 +483,8 @@ hr {
   padding: 190px 0 190px;
 }
 
+
+
 /* Страница портфолио */
 
 .portfolio-wedd {
@@ -504,6 +512,27 @@ hr {
   line-height: 45px;
   text-align: center;
   color: #524133;
+  transition: 1s;
+}
+
+.portfolio-wedd__photo {
+  display: inline-block; 
+  overflow: hidden; /* Скрываем всё за контуром */
+}
+.portfolio-wedd__photo img {
+  transition: 1s; /* Время эффекта */
+  display: block;
+}
+
+.portfolio-wedd__title:hover {
+  color: #524133; /* Меняем цвет текста */
+  -webkit-text-shadow: 3px 3px 3px #CEB8A3;
+  -moz-text-shadow: 3px 3px 3px #CEB8A3;
+  text-shadow: 3px 3px 3px #CEB8A3;
+}
+
+.photo__img:hover {
+  transform: scale(1.1);
 }
 
 /* Страница контакты */
