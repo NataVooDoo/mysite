@@ -10,3 +10,29 @@
 
  Хедер и футер не совпадают по границам
  добавить в стили функцию, чтобы все буквы были большие в заголовках
+
+
+
+
+ 
+             <div class="contacts__img">
+              <img src="assets/images/contacts.svg" alt="">
+             </div>
+
+              <div class="contacts_title">
+                <div>
+                 <h2 class="contacts__name">Понравились мои работы?</h2>
+                 <p class="contacts__text">Оставьте заявку и я с вами свяжусь</p>
+                </div>
+                                
+                <form action="" class="form" id="add-form">
+                
+                  <input type="text" name="name" placeholder="Ваше имя">
+                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                  <input type="date" id="bday" name="bday" placeholder="Дата события">
+                  <!-- <textarea name="comment" placeholder="Сообщение" id="" cols="30" rows="10"></textarea> -->
+                  <input type="email" id="email" pattern=".@gmail.ru/.mail.ru/.mail.com" required placeholder="E-mail">
+
+                  <button type="submit" class="send-btn">Отправить</button>
+                
+                </form>

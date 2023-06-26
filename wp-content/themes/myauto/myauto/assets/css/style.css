@@ -20,16 +20,16 @@ html,
 body {
   height: 100%;
 }
-/* Чтобы футтор прижимался к низу страницы */
+
 
 body {
   font-family: "Philosopher", sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
-  color: #2c2b2b;
+  color: #524133;
   background-color: #f9f4ee;
-  line-height: 1.3; /* высота строки, высчитывается автоматом */
+  line-height: 1.3;
 }
 
 ul {
@@ -37,16 +37,16 @@ ul {
 }
 
 a {
-  text-decoration: none; /* Убираем подчеркиваение */
-  color: inherit; /* Чтобы цвет брался у родителя */
-  display: inline-block; /* Чтобы применялись свойства блочных */
+  text-decoration: none; 
+  color: inherit; 
+  display: inline-block; 
 }
 
 .container {
   max-width: 1440px;
-  margin-left: auto; /* Устанавливает внешний отступ слева от элемента */
-  margin-right: auto; /* Устанавливает внешний отступ справа от элемента */
-  padding: 0 10px; /* Устанавливает внутренние отступы/поля со всех сторон элемента */
+  margin-left: auto; 
+  margin-right: auto;
+  padding: 0 10px; 
 }
 
 .main_container {
@@ -87,7 +87,6 @@ a {
   padding: 54px 200px 64px 200px;
   justify-content: center;
 }
-
 .footer__menu {
   width: 100%;
   max-width: 1350px;
@@ -136,14 +135,8 @@ a {
   margin-top: 30px;
 }
 
-/* .app{
-  display: flex;
-  gap: 25.5px;
- } */
-
 .main {
   flex-grow: 1;
-  /* Чтобы футтор прижимался к низу страницы */
 }
 
 .top {
@@ -174,7 +167,6 @@ hr {
 
 .title {
   padding-bottom: 55px;
-  /* растояние от заголовка до кнопки */
   font-weight: 400;
   font-size: 40px;
   display: flex;
@@ -270,7 +262,6 @@ hr {
 
 .i-am__bottom {
   text-align: right;
-  /* margin-right: 128px; */
 }
 
 .price {
@@ -289,7 +280,6 @@ hr {
   max-width: 1440px;
   display: flex;
   justify-content: center;
-  /* Распределяется блоки с одинаковыми отступами */
   text-align: center;
   gap: 39px;
   flex-wrap: wrap;
@@ -400,8 +390,6 @@ hr {
   padding: 24px;
   max-width: 380px;
   width: 100%;
-  /* display: flex;
-  justify-content: center; */
   background-color: transparent;
   padding-left: 58px;
   padding-right: 57px;
@@ -415,14 +403,6 @@ hr {
   background-color: #ceb8a3;
   border: 2px transparent;
 }
-
-/* hr{
-  width: 2.4px;
-  height: 458px;
-  margin: 427px 0 515px;
-  background-color: #b0a49b;
-  border: none;
-} */
 
 .price__list {
   font-family: "Mulish";
@@ -443,7 +423,6 @@ hr {
   justify-content: space-between;
   max-width: 1420px;
   margin-top: 86px;
-  /* margin-bottom: 261px; */
 }
 
 .prise-wedd__cards {
@@ -483,8 +462,6 @@ hr {
   padding: 190px 0 190px;
 }
 
-
-
 /* Страница портфолио */
 
 .portfolio-wedd {
@@ -516,19 +493,20 @@ hr {
 }
 
 .portfolio-wedd__photo {
-  display: inline-block; 
-  overflow: hidden; /* Скрываем всё за контуром */
-}
+  display: inline-block;
+  overflow: hidden;
+ }
+
 .portfolio-wedd__photo img {
-  transition: 1s; /* Время эффекта */
+  transition: 1s; 
   display: block;
 }
 
 .portfolio-wedd__title:hover {
-  color: #524133; /* Меняем цвет текста */
-  -webkit-text-shadow: 3px 3px 3px #CEB8A3;
-  -moz-text-shadow: 3px 3px 3px #CEB8A3;
-  text-shadow: 3px 3px 3px #CEB8A3;
+  color: #524133; 
+  -webkit-text-shadow: 3px 3px 3px #ceb8a3;
+  -moz-text-shadow: 3px 3px 3px #ceb8a3;
+  text-shadow: 3px 3px 3px #ceb8a3;
 }
 
 .photo__img:hover {
@@ -548,6 +526,101 @@ hr {
   text-transform: uppercase;
   margin-bottom: 30px;
 }
+
+.contacts__inner {
+  display: flex;
+  color: #524133;
+}
+
+.contacts-form {
+  width: 100%;
+  padding: 110px 104px;
+  text-align: center;
+}
+
+.contacts__title {
+  margin: 0 0 74px;
+  color: #524133;
+}
+
+.contacts__name {
+  font-weight: 400;
+  font-size: 40px;
+   font-weight: normal;
+}
+
+.contacts__text {
+  font-size: 24px;
+  font-family: Mulish;
+}
+
+.contacts__inputs {
+  padding: 22px 18px;
+  border: none;
+  margin-bottom: 49px;
+  background-color: #efe6de;
+  border-radius: 11px;
+  width: 280px;
+  height: 63px;
+}
+
+.contacts__inputs::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #524133;
+  opacity: 0.5;
+  font-family: Mulish;
+}
+
+.contacts__message {
+  padding: 0 0 80px;
+}
+
+textarea {
+  background: #f9f4ee;
+  border: 1px solid #8c7f74;
+  border-radius: 11px;
+  padding: 18px;
+  width: 580px;
+  height: 136px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #524133;
+  opacity: 0.5;
+  font-family: Mulish;
+}
+
+.contacts-form button {
+  border: none;
+  text-transform: uppercase;
+  color: #524133;
+  background-color: #ceb8a3;
+  border-radius: 15px;
+  padding: 24px 61px;
+  font-weight: 400;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.contacts-form button:hover {
+  background-color: #b29c88;
+}
+
+.adress__text {
+  width: 1174px;
+  color: rgba(82, 65, 51, 0.8);
+  text-align: center;
+  font-size: 24px;
+  font-family: Mulish;
+}
+
 
 /* Медиа запросы  */
 

@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Mulish&family=Philosopher&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Allura&family=Mulish&family=Philosopher&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="assets/css/header.css" />
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -65,52 +67,81 @@
         </div>
       </div>
     </header>
-    
+
     <main>
       <section class="contacts">
-
         <div class="title-name">
           <!-- <img src="assets/images/fon.jpg" alt=""> -->
           <h1 class="title-name__contacts">CONTACTS</h1>
         </div>
 
         <div class="container">
-
           <div class="contacts__inner">
+            <img src="assets/images/contacts.svg" alt="" />
 
-           <div class="contacts__img">
-            <img src="assets/images/contacts.svg" alt="">
-           </div>
+            <form class="contacts-form" action="#">
+              <div class="contacts__title">
+                <h2 class="contacts__name">Понравились мои работы?</h2>
+                <p class="contacts__text">Оставьте заявку и я с вами свяжусь</p>
+              </div>
 
-            <div class="contacts_title">
-             <div>
-              <h2 class="contacts__name">Понравились мои работы?</h2>
-              <p class="contacts__text">Оставьте заявку и я с вами свяжусь</p>
-            </div>
-                                              
-              <form action="" class="form" id="add-form">
+              <input
+                class="contacts__inputs"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+              />
+              <input
+                class="contacts__inputs"
+                type="tel"
+                id="phone"
+                name="phone"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                required
+                placeholder="Ваш телефон"
+              />
+            
+              <input
+                class="contacts__inputs"
+                type="date"
+                id="bday"
+                name="bday"
+                placeholder="Дата события"
+              />
+              <input
+                class="contacts__inputs"
+                type="email"
+                id="email"
+                pattern=".@gmail.ru/.mail.ru/.mail.com"
+                required
+                placeholder="E-mail"
+              />
+              
+              <p class="contacts__message">
+                <textarea name="comment" placeholder="Сообщение"></textarea>
+              </p>
+              <button type="submit" class="send-btn">Отправить</button>
+            </form>
+          </div>
 
-                <div>
-                  <input type="text" name="name" placeholder="Ваше имя">
-                  <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-                  <input type="date" id="bday" name="bday" placeholder="Дата события">
-                  <!-- <textarea name="comment" placeholder="Сообщение" id="" cols="30" rows="10"></textarea> -->
-                  <input type="email" id="email" pattern=".@gmail.ru/.mail.ru/.mail.com" required placeholder="E-mail">
+          <div class="Address">
+            <p class="adress__text">
+              Вы можете связаться со мной любым удобным для вас способом ниже. Я
+              готова оперативно ответить на все ваши вопросы и воплатить самые
+              заветные желания по съёмкам.
+            </p>
 
-                  <button type="submit" class="send-btn">Отправить</button>
-                </div>
+            <ul class="address-list">
+              <li class="addres-item">
 
-              </form>
+              </li>
 
-  
-            </div>                       
-         
+            </ul>
+          </div>
         </div>
-
       </section>
     </main>
 
-    
     <footer class="footer">
       <!-- <div class="container"> -->
       <nav class="footer__menu">
@@ -168,7 +199,10 @@
               </a>
             </li>
             <li class="app__item">
-              <a href="https://wa.me/89184331854?text=Добрый день! Хочу фотосессию" class="app__item-link">
+              <a
+                href="https://wa.me/89184331854?text=Добрый день! Хочу фотосессию"
+                class="app__item-link"
+              >
                 <img
                   class="app__item-img"
                   src="assets/images/apps/whatsapp.svg"
@@ -201,6 +235,5 @@
     </footer>
 
     <script src="assets/js/script.js"></script>
-
   </body>
 </html>
