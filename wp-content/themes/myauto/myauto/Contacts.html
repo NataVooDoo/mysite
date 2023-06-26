@@ -70,8 +70,8 @@
 
     <main>
       <section class="contacts">
+
         <div class="title-name">
-          <!-- <img src="assets/images/fon.jpg" alt=""> -->
           <h1 class="title-name__contacts">CONTACTS</h1>
         </div>
 
@@ -100,7 +100,7 @@
                 required
                 placeholder="Ваш телефон"
               />
-            
+
               <input
                 class="contacts__inputs"
                 type="date"
@@ -116,33 +116,49 @@
                 required
                 placeholder="E-mail"
               />
-              
+
               <p class="contacts__message">
                 <textarea name="comment" placeholder="Сообщение"></textarea>
               </p>
               <button type="submit" class="send-btn">Отправить</button>
             </form>
           </div>
+        </div>
+      </section>
 
-          <div class="Address">
-            <p class="adress__text">
-              Вы можете связаться со мной любым удобным для вас способом ниже. Я
-              готова оперативно ответить на все ваши вопросы и воплатить самые
-              заветные желания по съёмкам.
-            </p>
+      <section class="Address">
+        <div class="container">
+          <h3 class="address__inner">
+          Вы можете связаться со мной любым удобным для вас способом ниже. Я
+          готова оперативно ответить на все ваши вопросы и воплатить самые
+          заветные желания по съёмкам.
+          </h3>
 
-            <ul class="address-list">
-              <li class="addres-item">
+          <div class="adress__items">
+            <div class="adress__item">
+              <h4 class="adress__item-title">Телефон/WhatsApp</h4>
+              <hr>
+              <p class="adress__item-text">+7 777 777 77 77</p>
+            </div>
+            <div class="adress__item">
+              <h4 class="adress__item-title">E-mail</h4>
+              <hr>
+              <p class="adress__item-text">Tora_alesandra@mail.ru</p>
+            </div>
+            <div class="adress__item">
+              <h4 class="adress__item-title">Instagram</h4>
+              <hr>
+              <p class="adress__item-text">@tora.alesandra</p>
+            </div>
 
-              </li>
-
-            </ul>
           </div>
         </div>
       </section>
+
+
     </main>
 
-    <footer class="footer">
+   <footer class="footer">
       <!-- <div class="container"> -->
       <nav class="footer__menu">
         <ul class="footer__menu_list fst_el_of_footer">
@@ -199,10 +215,7 @@
               </a>
             </li>
             <li class="app__item">
-              <a
-                href="https://wa.me/89184331854?text=Добрый день! Хочу фотосессию"
-                class="app__item-link"
-              >
+              <a href="https://wa.me/89184331854?text=Добрый день! Хочу фотосессию" class="app__item-link">
                 <img
                   class="app__item-img"
                   src="assets/images/apps/whatsapp.svg"

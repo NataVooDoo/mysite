@@ -21,14 +21,13 @@ body {
   height: 100%;
 }
 
-
 body {
   font-family: "Philosopher", sans-serif;
   font-size: 18px;
   line-height: 27px;
   font-weight: 300;
   color: #524133;
-  background-color: #f9f4ee;
+  background-color: #F9F4EE;
   line-height: 1.3;
 }
 
@@ -37,16 +36,15 @@ ul {
 }
 
 a {
-  text-decoration: none; 
-  color: inherit; 
-  display: inline-block; 
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
 }
 
 .container {
-  max-width: 1440px;
-  margin-left: auto; 
-  margin-right: auto;
-  padding: 0 10px; 
+  max-width: 1460px;
+  margin: 0 auto;
+  padding: 0 10px;
 }
 
 .main_container {
@@ -361,6 +359,10 @@ hr {
 
 /* Страница цен */
 
+.contacts{
+  padding-top: 52px;
+}
+
 .title-name {
   vertical-align: middle;
   width: 100%;
@@ -495,15 +497,15 @@ hr {
 .portfolio-wedd__photo {
   display: inline-block;
   overflow: hidden;
- }
+}
 
 .portfolio-wedd__photo img {
-  transition: 1s; 
+  transition: 1s;
   display: block;
 }
 
 .portfolio-wedd__title:hover {
-  color: #524133; 
+  color: #524133;
   -webkit-text-shadow: 3px 3px 3px #ceb8a3;
   -moz-text-shadow: 3px 3px 3px #ceb8a3;
   text-shadow: 3px 3px 3px #ceb8a3;
@@ -516,7 +518,7 @@ hr {
 /* Страница контакты */
 
 .contacts {
-  padding: 52px 0;
+  padding-bottom: 70px;
 }
 
 .footer__menu-title {
@@ -530,11 +532,13 @@ hr {
 .contacts__inner {
   display: flex;
   color: #524133;
+  margin-top: 94px;
+
 }
 
 .contacts-form {
   width: 100%;
-  padding: 110px 104px;
+  padding: 0 104px;
   text-align: center;
 }
 
@@ -546,7 +550,7 @@ hr {
 .contacts__name {
   font-weight: 400;
   font-size: 40px;
-   font-weight: normal;
+  font-weight: normal;
 }
 
 .contacts__text {
@@ -604,6 +608,7 @@ textarea::placeholder {
   background-color: #ceb8a3;
   border-radius: 15px;
   padding: 24px 61px;
+  font-size: 17px;
   font-weight: 400;
   cursor: pointer;
   transition: 1s;
@@ -613,14 +618,51 @@ textarea::placeholder {
   background-color: #b29c88;
 }
 
-.adress__text {
-  width: 1174px;
-  color: rgba(82, 65, 51, 0.8);
+.address__inner {
+  max-width: 1174px;
+  color: #524133;
+  opacity: 80%;
   text-align: center;
   font-size: 24px;
   font-family: Mulish;
+  margin: 0 auto 85px;
+  font-weight: 400;
+  padding: 0 10px;
 }
 
+.Address {
+  margin-bottom: 86px;
+}
+
+.adress__items {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 90px 0;
+}
+
+.adress__item {
+  width: 270px;
+  text-align: center;
+}
+
+.adress__item-title {
+  font-size: 24px;
+  font-weight: 400;
+}
+
+hr {
+  width: 50%;
+  margin: 15px 25% 15px 25%;
+  width: 156px;
+  border: 1px rgba(82, 65, 51, 0.65) solid;
+}
+
+.adress__item-text {
+  font-size: 20px;
+  font-family: Mulish;
+  font-weight: 400;
+  opacity: 80%;
+}
 
 /* Медиа запросы  */
 
@@ -739,7 +781,7 @@ textarea::placeholder {
   }
   .i-am__photo {
     height: auto;
-    width: 90vw;
+    width: 50vw;
     max-width: 1000px;
     margin: 0;
   }
