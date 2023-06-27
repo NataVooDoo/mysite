@@ -481,6 +481,19 @@ a {
   gap: 10px;
 }
 
+@media (max-width: 1450px){
+  .portfolio__inner{
+    gap: 150px;
+  }
+}
+
+@media (max-width: 1110px){
+  .portfolio__inner{
+    gap: 50px;
+    justify-content: center;
+  }
+}
+
 .indent {
   margin: 86px 20px 86px;
 }
