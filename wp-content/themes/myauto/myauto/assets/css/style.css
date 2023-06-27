@@ -42,9 +42,9 @@ a {
 }
 
 .container {
-  max-width: 1460px;
+  max-width: 1440px;
   margin: 0 auto;
-  padding: 0 10px;
+  padding: 0 132px;
 }
 
 .main_container {
@@ -63,11 +63,13 @@ a {
 }
 
 .block_text {
+  position: relative;
   width: 600px;
   margin-left: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  left: 132px;
 }
 
 .button {
@@ -146,27 +148,27 @@ a {
   height: 870px;
   position: relative;
   align-items: center;
-  left: 100px;
 }
 
-hr {
+.top hr {
   width: 380px;
   border: 2px solid #94897f;
   border-radius: 2px;
 }
+
 .top img {
   position: absolute;
   height: 868px;
   z-index: -1;
   overflow: hidden;
-  right: -300px;
+  right: -400px;
   top: 0px;
 }
 
 .title {
   padding-bottom: 55px;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 50px;
   display: flex;
 }
 
@@ -193,7 +195,7 @@ hr {
 .i-am {
   padding: 120px 0 120px;
   width: 100%;
-  max-width: 1220px;
+  max-width: 1440px;
 }
 
 .i-am__photo {
@@ -420,6 +422,7 @@ hr {
 }
 
 .prise-wedd__inner {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -475,6 +478,7 @@ hr {
   justify-content: space-between;
   flex-wrap: wrap;
   max-width: 1440px;
+  gap: 10px;
 }
 
 .indent {
@@ -521,6 +525,12 @@ hr {
   padding-bottom: 70px;
 }
 
+@media (max-width: 900px){
+  .contacts{
+    padding-bottom: 0;
+  }
+}
+
 .footer__menu-title {
   font-size: 20px;
   font-weight: 600;
@@ -530,15 +540,21 @@ hr {
 }
 
 .contacts__inner {
-  display: flex;
   color: #524133;
   margin-top: 94px;
-
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
+@media (max-width: 1190px){
+  .contacts__inner{
+    flex-direction: column;
+  }
+}
+
+
 .contacts-form {
-  width: 100%;
-  padding: 0 104px;
   text-align: center;
 }
 
@@ -560,12 +576,19 @@ hr {
 
 .contacts__inputs {
   padding: 22px 18px;
+  margin: 10px;
   border: none;
   margin-bottom: 49px;
   background-color: #efe6de;
   border-radius: 11px;
   width: 280px;
   height: 63px;
+}
+
+
+
+.contacts__inputs:focus-visible{
+  outline: none;
 }
 
 .contacts__inputs::placeholder {
@@ -575,6 +598,13 @@ hr {
   color: #524133;
   opacity: 0.5;
   font-family: Mulish;
+}
+
+@media (max-width: 1190px){
+  .contacts__inputs{
+    width: 100%;
+    margin: 27px 0px;
+  }
 }
 
 .contacts__message {
@@ -590,6 +620,12 @@ textarea {
   height: 136px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+@media (max-width: 650px){
+  textarea{
+    width: 100%;
+  }
 }
 
 textarea::placeholder {
@@ -630,6 +666,12 @@ textarea::placeholder {
   padding: 0 10px;
 }
 
+@media (max-width: 900px){
+  .address__inner{
+    display: none;
+  }
+}
+
 .Address {
   margin-bottom: 86px;
 }
@@ -638,6 +680,12 @@ textarea::placeholder {
   display: flex;
   justify-content: space-between;
   padding: 0 90px 0;
+}
+
+@media (max-width: 900px){
+  .adress__items{
+    display: none;
+  }
 }
 
 .adress__item {
@@ -685,11 +733,7 @@ hr {
   }
 }
 
-@media (max-width: 780px) {
-  .top img {
-    right: -460px;
-  }
-}
+
 
 @media (max-width: 880px) {
   .portfolio__inner {
@@ -703,13 +747,13 @@ hr {
 
 @media (max-width: 1000px) {
   .prise-wedd__inner {
-    /* flex-direction: column; */
+    justify-content: center;
   }
 }
 
 @media (max-width: 1024px) {
   .wed__img {
-    width: 80%;
+    /* width: 80%; */
   }
   .price__list {
     font-size: 18px;
@@ -747,22 +791,49 @@ hr {
   }
 }
 
-@media (max-width: 1320px) {
+@media (max-width: 1440px) {
+  .container{
+    padding: 0 24px;
+  }
+  
   .top {
-    height: 1120px;
+    height: 1050px;
     flex-direction: column;
     left: 0px;
     justify-content: flex-end;
     align-items: center;
   }
+  .top .title  {
+    font-size: 30px;
+    padding-bottom: 23px
+  }
+
+  .top hr {
+    width: 242px;
+  }
+
+  .top .title__2 {
+    font-size: 14px;
+    padding: 25px 0px 34px 0px;
+  }
+
+  .top .top__link{
+    font-size: 12px;
+    line-height: 15px;
+    width: 203px;
+    height: 42px;
+  }
 
   .block_text {
     padding-top: 100px;
+    left: 0;
     position: absolute;
     width: 100%;
     background: linear-gradient(#ffffff00, #f7f4ee 43%);
+
   }
 }
+
 
 @media (max-width: 1439px) {
   .i-am__bottom {
@@ -784,5 +855,56 @@ hr {
     width: 50vw;
     max-width: 1000px;
     margin: 0;
+  }
+}
+
+@media (max-width: 780px) {
+
+  .top {
+    height: 770px;
+  }
+
+  .logo__img {
+    width: 44px;
+  }
+
+  .top img {
+    top: -50px;
+    right: -400px;
+    height: 620px;
+  }
+
+  .i-am-title_outer {
+    font-size: 25px;
+    line-height: 28px;
+  }
+
+  .i-am__photo {
+    width: 85vw;
+  }
+
+  .i-am__text p {
+    font-size: 12px;
+    font-family: Mulish;
+    line-height: 15px;
+    letter-spacing: 0em;    
+    margin: 0 0 15px;
+  }
+
+  .i-am__bottom{
+    margin-right: 0;
+  }
+
+  .i-am__love {
+    font-size: 14px;
+  }
+
+  .i-am__love__tora {
+    font-size: 33px;
+    line-height: 41px;
+  }
+
+  .i-am {
+    padding: 120px 0 40px;
   }
 }
