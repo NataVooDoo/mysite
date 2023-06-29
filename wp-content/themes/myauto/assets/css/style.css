@@ -53,6 +53,178 @@ a {
   align-items: center;
 }
 
+
+
+.header {
+  color: #524133;
+  background-color: #f2e8e6;
+}
+
+.burger_menu {
+  display: none;
+  align-items: center;
+  width: 40px;
+}
+
+.menu_btn {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  z-index: 6;
+  overflow: hidden;
+}
+
+.menu_btn:hover {
+  cursor: pointer;
+}
+
+.menu_btn span {
+  width: 26px;
+  height: 3px;
+  border: 2px solid rgba(82, 65, 51, 0.85);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.5s;
+}
+
+.menu_btn span:nth-of-type(2) {
+  top: calc(50% - 8px);
+}
+
+.menu_btn span:nth-of-type(3) {
+  top: calc(50% + 8px);
+}
+
+.menu_burger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: #00000062;
+  backdrop-filter: blur(10px);
+  transform: translateX(+100%);
+  transition: transform 0.5s;
+  z-index: 2;
+}
+
+.menu_list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+.menu_burger.active {
+  transform: translateX(0%);
+}
+
+.menu-item .burger_link {
+  list-style-type: none;
+  font-size: 25px;
+  color: #c1bebe;
+  line-height: 40px;
+}
+
+.menu_link {
+  font-family: Trebuchet MS, Tahoma;
+  text-transform: uppercase;
+  font-size: 2em;
+  letter-spacing: 0.14em;
+  word-spacing: 0.3em;
+  color: #ffffffff;
+  line-height: 2.5;
+}
+
+.menu_btn.active span:first-of-type {
+  opacity: 0;
+  transform: translateX(100%);
+}
+
+.menu_btn.active span:nth-of-type(2) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.menu_btn.active span:nth-of-type(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.header__inner {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+  gap: 35px;
+}
+
+.menu__list-link {
+  color: #3f2511;
+  transition: 1s;
+}
+
+.menu__list-link:hover {
+  scale: 1.1;
+}
+
+.phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  transition: 1s;
+}
+
+.phone:hover {
+  scale: 1.1;
+}
+
+.header__content {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 700px;
+  position: relative;
+}
+
+.header__title {
+  padding-top: 222px;
+  font-weight: 400;
+  font-size: 55px;
+  line-height: 62px;
+  text-align: center;
+}
+
+.header__subtitle {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 31px;
+  margin-top: 87px;
+  margin-bottom: 87px;
+}
+
+@media (max-width: 729px) {
+  .menu,
+  .menu__list-item {
+    display: none;
+  }
+  .burger_menu {
+    display: flex;
+    align-items: center;
+    width: 40px;
+  }
+}
+
+
+
 .title__2 {
   padding: 44px 0px 55px 0px;
   font-family: "Mulish";
@@ -495,7 +667,7 @@ a {
 }
 
 .indent {
-  margin: 86px 20px 86px;
+  margin: 86px 0 86px;
 }
 
 .portfolio-wedd__photo {
