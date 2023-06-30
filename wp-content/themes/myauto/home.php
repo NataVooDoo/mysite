@@ -62,27 +62,46 @@ Template Name: home
           </div>
         </section>
 
-        <section class="price">
-          <!-- <div class="container"> -->
+
+
+
+        <?php
+global $post;
+
+$myposts = get_posts([ 
+	'numberposts' => -1,
+]);
+
+if( $myposts ){
+	foreach( $myposts as $post ){
+		setup_postdata( $post );
+		?>
+
+       <section class="price">
           <ul class="price-list">
             <li class="price-item">
-              <h2>WEDDING</h2>
-              <img src="<?php bloginfo('template_url'); ?>/assets/images/price/Wedding.jpg" alt="Wedding" />
-              <h3><a href="">СМОТРЕТЬ</a></h3>
-            </li>
-            <li class="price-item">
-              <h2>FAMliY/LOVESTORY</h2>
-              <img src="<?php bloginfo('template_url'); ?>/assets/images/price/family.jpg" alt="Family" />
-              <h3><a href="">СМОТРЕТЬ</a></h3>
-            </li>
-            <li class="price-item">
-              <h2>PORTRAIT</h2>
-              <img src="<?php bloginfo('template_url'); ?>/assets/images/price/portrait.jpg" alt="Portrait" />
+              <h2><?php the_title(); ?></h2>
+
+              
+
+              <?php the_post_thumbnail(
+                array(338, 506),
+                // array(
+                //   'class' => "attachment-$size",
+                // )
+              ); ?>
+
               <h3><a href="">СМОТРЕТЬ</a></h3>
             </li>
           </ul>
-          <!-- </div> -->
         </section>
+
+		<?php } } wp_reset_postdata(); ?>
+
+
+
+
+       
 
         <section class="instagram">
           <div class="bot_container">
